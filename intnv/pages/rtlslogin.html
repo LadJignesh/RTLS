@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RTLS LOGIN</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="rtls_user_reg.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+	<h2>RTLS USER REGISTRATION FORM</h2>
+	<form name="myForm" action="rtls_user_reg.php" onsubmit="return validateForm(this)"  method="POST" id="myForm">
+  <div class="form-group">
+    <label for="First Name">First Name</label>
+    <input type="text" class="form-control" name="fname" placeholder="First Name">
+  </div>
+  <div class="form-group">
+    <label for="Middle Name">Middle Name</label>
+    <input type="text" class="form-control" name="mname" placeholder="Middle name">
+  </div>
+  <div class="form-group">
+    <label for="Last Name">Last Name</label>
+    <input type="text" class="form-control" name="lname" placeholder="Last name">
+  </div>
+  <div class="form-group">
+    <label for="Username">Userame</label>
+    <input type="text" class="form-control" name="username" placeholder="Username">
+  </div><div class="form-group">
+    <label for="Password">Password</label>
+    <input type="password" class="form-control" name="passwd" placeholder="Password">
+  </div><div class="form-group">
+    <label for="Control_room_no">Control Room No.</label>
+    <input type="text" class="form-control" name="ctrl_room_no" placeholder="Control Room No.">
+  </div>
+  <div class="form-group">
+    <label for="jetty">Jetty Assigned</label>
+    <input type="text" class="form-control" name="jetty" placeholder="Jetty Assigned">
+  </div>
+  <div class="form-group">
+    <label for="Registration Date">Registration Date</label>
+    <input type="date"  class="form-control" name="reg_date" placeholder="Registration Date">
+  </div>
+  <div class="form-group">
+    
+  <button type="submit" value="Submit" class="btn btn-default">Submit</button>
+</form>
+</div>
+
+</body>
+</html>
